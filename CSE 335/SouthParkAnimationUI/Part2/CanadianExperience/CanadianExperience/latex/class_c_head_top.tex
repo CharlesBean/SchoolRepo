@@ -1,0 +1,252 @@
+\hypertarget{class_c_head_top}{\section{C\+Head\+Top Class Reference}
+\label{class_c_head_top}\index{C\+Head\+Top@{C\+Head\+Top}}
+}
+
+
+A class for representing the top of an actor's head.  
+
+
+
+
+{\ttfamily \#include $<$Head\+Top.\+h$>$}
+
+Inheritance diagram for C\+Head\+Top\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_head_top}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}{C\+Head\+Top} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_a574b5950dff9f90de01219437f475cb9}{\hyperlink{class_c_head_top_a574b5950dff9f90de01219437f475cb9}{C\+Head\+Top} (const \hyperlink{class_c_head_top}{C\+Head\+Top} \&)=delete}\label{class_c_head_top_a574b5950dff9f90de01219437f475cb9}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor disabled. \end{DoxyCompactList}\item 
+\hypertarget{class_c_head_top_aeb3522f283f90cb48b7b6a7ed6243aeb}{void \hyperlink{class_c_head_top_aeb3522f283f90cb48b7b6a7ed6243aeb}{operator=} (const \hyperlink{class_c_head_top}{C\+Head\+Top} \&)=delete}\label{class_c_head_top_aeb3522f283f90cb48b7b6a7ed6243aeb}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator disabled. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}{$\sim$\+C\+Head\+Top} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}{C\+Head\+Top} (const std\+::wstring \&name, const std\+::wstring \&filename)
+\begin{DoxyCompactList}\small\item\em Non-\/default Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_afd29c8fac9d9d44ad4cc2ef480d26d29}{Draw} (Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em Draws our head. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_a8895e3a21b072f335f7e67992eb3bc54}{Draw\+Eyebrow} (Graphics $\ast$graphics, Point location\+Left, Point location\+Right)
+\begin{DoxyCompactList}\small\item\em Draws an eyebrow. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_ad00611870a77e747bf6cb03305b027e6}{Draw\+Eye} (Graphics $\ast$graphics, Point location)
+\begin{DoxyCompactList}\small\item\em Draws an eye at a location relative to our head top. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_head_top_a38d98789668f640fa3bbb8352fb54c49}{Is\+Movable} () override
+\begin{DoxyCompactList}\small\item\em Determines if we can move our head (override) \end{DoxyCompactList}\item 
+Point \hyperlink{class_c_head_top_a631542f2cc871fa17542b3253dc6ab73}{Transform\+Point} (Gdiplus\+::\+Point p)
+\item 
+void \hyperlink{class_c_head_top_aa41cbf785465fde0656348227c44dead}{Set\+Eyes} (Point left\+Eye\+Location, Point right\+Eye\+Location)
+\begin{DoxyCompactList}\small\item\em Sets our eye locations. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_a47387e0a6f7317a16bc1492427268f26}{Set\+Left\+Eyebrow} (Point left\+Endpoint, Point right\+Endpoint)
+\begin{DoxyCompactList}\small\item\em Sets our left eyebrows left and right endpoints. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_head_top_a8743f25295c778d44f899489fee350f1}{Set\+Right\+Eyebrow} (Point left\+Endpoint, Point right\+Endpoint)
+\begin{DoxyCompactList}\small\item\em Sets our right eyebrows left and right endpoints. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class for representing the top of an actor's head. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}{\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{C\+Head\+Top}]{\setlength{\rightskip}{0pt plus 5cm}C\+Head\+Top\+::\+C\+Head\+Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_c_head_top_a54fab18f42f367ff9cfdf73537ada62f}
+
+
+Default constructor disabled. 
+
+Delete Default, Copy, Assignemtn \hypertarget{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}{\index{C\+Head\+Top@{C\+Head\+Top}!````~C\+Head\+Top@{$\sim$\+C\+Head\+Top}}
+\index{````~C\+Head\+Top@{$\sim$\+C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{$\sim$\+C\+Head\+Top}]{\setlength{\rightskip}{0pt plus 5cm}C\+Head\+Top\+::$\sim$\+C\+Head\+Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_head_top_a64697c81bc0100f66aa661a8bc430fa9}
+
+
+Destructor. 
+
+Constructor \& Destructor \hypertarget{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}{\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\index{C\+Head\+Top@{C\+Head\+Top}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{C\+Head\+Top}]{\setlength{\rightskip}{0pt plus 5cm}C\+Head\+Top\+::\+C\+Head\+Top (
+\begin{DoxyParamCaption}
+\item[{const std\+::wstring \&}]{name, }
+\item[{const std\+::wstring \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_a31333179dc1836d6ae5b9636b215b66b}
+
+
+Non-\/default Constructor. 
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_head_top_afd29c8fac9d9d44ad4cc2ef480d26d29}{\index{C\+Head\+Top@{C\+Head\+Top}!Draw@{Draw}}
+\index{Draw@{Draw}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{Graphics $\ast$}]{graphics}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_afd29c8fac9d9d44ad4cc2ef480d26d29}
+
+
+Draws our head. 
+
+General Functions
+\begin{DoxyParams}{Parameters}
+{\em graphics} & -\/ The graphics context to draw the head on\\
+\hline
+{\em graphics} & -\/ The graphics context to draw the head on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_ad00611870a77e747bf6cb03305b027e6}{\index{C\+Head\+Top@{C\+Head\+Top}!Draw\+Eye@{Draw\+Eye}}
+\index{Draw\+Eye@{Draw\+Eye}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw\+Eye}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw\+Eye (
+\begin{DoxyParamCaption}
+\item[{Graphics $\ast$}]{graphics, }
+\item[{Point}]{location}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_ad00611870a77e747bf6cb03305b027e6}
+
+
+Draws an eye at a location relative to our head top. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & -\/ The contexxt \\
+\hline
+{\em location} & -\/ The location to put the eye \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a8895e3a21b072f335f7e67992eb3bc54}{\index{C\+Head\+Top@{C\+Head\+Top}!Draw\+Eyebrow@{Draw\+Eyebrow}}
+\index{Draw\+Eyebrow@{Draw\+Eyebrow}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Draw\+Eyebrow}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Draw\+Eyebrow (
+\begin{DoxyParamCaption}
+\item[{Graphics $\ast$}]{graphics, }
+\item[{Point}]{location\+Left, }
+\item[{Point}]{location\+Right}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_a8895e3a21b072f335f7e67992eb3bc54}
+
+
+Draws an eyebrow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & -\/ The context \\
+\hline
+{\em location\+Left} & -\/ Location of the left eye \\
+\hline
+{\em location\+Right} & -\/ Location of the right eye\\
+\hline
+{\em graphics} & -\/ The context \\
+\hline
+{\em location} & -\/ The place to draw it with respect to the image (not background) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a38d98789668f640fa3bbb8352fb54c49}{\index{C\+Head\+Top@{C\+Head\+Top}!Is\+Movable@{Is\+Movable}}
+\index{Is\+Movable@{Is\+Movable}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Is\+Movable}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Head\+Top\+::\+Is\+Movable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_head_top_a38d98789668f640fa3bbb8352fb54c49}
+
+
+Determines if we can move our head (override) 
+
+\begin{DoxyReturn}{Returns}
+True because heads should be able to move on their own 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_drawable_ac9f03cfc58aed75fb52cd69c71e7b6e0}{C\+Drawable}.
+
+\hypertarget{class_c_head_top_aa41cbf785465fde0656348227c44dead}{\index{C\+Head\+Top@{C\+Head\+Top}!Set\+Eyes@{Set\+Eyes}}
+\index{Set\+Eyes@{Set\+Eyes}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Set\+Eyes}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Set\+Eyes (
+\begin{DoxyParamCaption}
+\item[{Point}]{left\+Eye\+Location, }
+\item[{Point}]{right\+Eye\+Location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_aa41cbf785465fde0656348227c44dead}
+
+
+Sets our eye locations. 
+
+Getters \& Setters
+\begin{DoxyParams}{Parameters}
+{\em left\+Eye\+Location} & -\/ The location of the left eye \\
+\hline
+{\em right\+Eye\+Location} & -\/ The location of the right eye \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a47387e0a6f7317a16bc1492427268f26}{\index{C\+Head\+Top@{C\+Head\+Top}!Set\+Left\+Eyebrow@{Set\+Left\+Eyebrow}}
+\index{Set\+Left\+Eyebrow@{Set\+Left\+Eyebrow}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Set\+Left\+Eyebrow}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Set\+Left\+Eyebrow (
+\begin{DoxyParamCaption}
+\item[{Point}]{left\+Endpoint, }
+\item[{Point}]{right\+Endpoint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_a47387e0a6f7317a16bc1492427268f26}
+
+
+Sets our left eyebrows left and right endpoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+Endpoint} & -\/ The left end of the eyebrow \\
+\hline
+{\em right\+Endpoint} & -\/ The right end \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a8743f25295c778d44f899489fee350f1}{\index{C\+Head\+Top@{C\+Head\+Top}!Set\+Right\+Eyebrow@{Set\+Right\+Eyebrow}}
+\index{Set\+Right\+Eyebrow@{Set\+Right\+Eyebrow}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Set\+Right\+Eyebrow}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Head\+Top\+::\+Set\+Right\+Eyebrow (
+\begin{DoxyParamCaption}
+\item[{Point}]{left\+Endpoint, }
+\item[{Point}]{right\+Endpoint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_head_top_a8743f25295c778d44f899489fee350f1}
+
+
+Sets our right eyebrows left and right endpoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+Endpoint} & -\/ The left end of the eyebrow \\
+\hline
+{\em right\+Endpoint} & -\/ The right end \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_head_top_a631542f2cc871fa17542b3253dc6ab73}{\index{C\+Head\+Top@{C\+Head\+Top}!Transform\+Point@{Transform\+Point}}
+\index{Transform\+Point@{Transform\+Point}!C\+Head\+Top@{C\+Head\+Top}}
+\subsubsection[{Transform\+Point}]{\setlength{\rightskip}{0pt plus 5cm}Gdiplus\+::\+Point C\+Head\+Top\+::\+Transform\+Point (
+\begin{DoxyParamCaption}
+\item[{Gdiplus\+::\+Point}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_c_head_top_a631542f2cc871fa17542b3253dc6ab73}
+Transform a point from a location on the bitmap to a location on the screen. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Point to transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_head_top_8h}{Head\+Top.\+h}\item 
+\hyperlink{_head_top_8cpp}{Head\+Top.\+cpp}\end{DoxyCompactItemize}

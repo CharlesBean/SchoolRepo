@@ -1,0 +1,20 @@
+﻿Build started 11/7/2014 11:47:07 PM.
+     1>Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step5\Part2\CanadianExperience\Testing\Testing.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step5\Part2\CanadianExperience\Debug\Testing.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\UnitTest\lib" StdAfx PictureObserver Picture Actor Drawable PolyDrawable ImageDrawable Timeline AnimChannel AnimChannelAngle AnimChannelPoint /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step5\Part2\CanadianExperience\Debug\Testing.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step5\Part2\CanadianExperience\Debug\Testing.lib" /MACHINE:X86 /DLL Debug\CActorTest.obj
+         Debug\CAnimChannelAngleTest.obj
+         Debug\CDrawableTest.obj
+         Debug\CImageDrawableTest.obj
+         Debug\CPictureObserverTest.obj
+         Debug\CPictureTest.obj
+         Debug\CPolyDrawableTest.obj
+         Debug\CTimelineTest.obj
+         Debug\EmptyTest.obj
+         Debug\stdafx.obj
+         Debug\initialize.obj
+         Testing.vcxproj -> D:\Windows\Programming\School\CSE 335\Work\Steps\Step5\Part2\CanadianExperience\Debug\Testing.dll
+     1>Done Building Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step5\Part2\CanadianExperience\Testing\Testing.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.42

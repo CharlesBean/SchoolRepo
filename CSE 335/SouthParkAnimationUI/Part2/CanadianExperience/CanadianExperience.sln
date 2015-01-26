@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CanadianExperience", "CanadianExperience\CanadianExperience.vcxproj", "{CF406C07-3E39-46A8-A076-8BD9513001D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Testing", "Testing\Testing.vcxproj", "{2B49B3F8-5A23-4BC3-8A77-189C0B2B9671}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CF406C07-3E39-46A8-A076-8BD9513001D7} = {CF406C07-3E39-46A8-A076-8BD9513001D7}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBF61CE2-37AF-4A78-99FD-D8CDB1B185D3}"
+	ProjectSection(SolutionItems) = preProject
+		images\amflag.png = images\amflag.png
+		images\Background.png = images\Background.png
+		images\butch_arm.png = images\butch_arm.png
+		images\butch_armor.png = images\butch_armor.png
+		images\butch_headb.png = images\butch_headb.png
+		images\butch_headt.png = images\butch_headt.png
+		images\butch_lleg.png = images\butch_lleg.png
+		images\butch_rleg.png = images\butch_rleg.png
+		images\harold_headb.png = images\harold_headb.png
+		images\harold_headt.png = images\harold_headt.png
+		images\harold_headt_blank.png = images\harold_headt_blank.png
+		images\harold_lleg.png = images\harold_lleg.png
+		images\harold_rleg.png = images\harold_rleg.png
+		images\harold_shirt.png = images\harold_shirt.png
+		images\harold_vest.png = images\harold_vest.png
+		images\pointer.png = images\pointer.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF406C07-3E39-46A8-A076-8BD9513001D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CF406C07-3E39-46A8-A076-8BD9513001D7}.Debug|Win32.Build.0 = Debug|Win32
+		{CF406C07-3E39-46A8-A076-8BD9513001D7}.Release|Win32.ActiveCfg = Release|Win32
+		{CF406C07-3E39-46A8-A076-8BD9513001D7}.Release|Win32.Build.0 = Release|Win32
+		{2B49B3F8-5A23-4BC3-8A77-189C0B2B9671}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2B49B3F8-5A23-4BC3-8A77-189C0B2B9671}.Debug|Win32.Build.0 = Debug|Win32
+		{2B49B3F8-5A23-4BC3-8A77-189C0B2B9671}.Release|Win32.ActiveCfg = Release|Win32
+		{2B49B3F8-5A23-4BC3-8A77-189C0B2B9671}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

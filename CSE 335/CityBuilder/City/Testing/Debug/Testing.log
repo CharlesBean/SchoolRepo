@@ -1,0 +1,27 @@
+﻿Build started 12/10/2014 2:30:42 PM.
+     1>Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Testing\Testing.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\CL.exe /c /I"D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Testing.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\CL.exe /c /I"D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Testing.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt CCityTest.cpp CTileRoadTest.cpp CTileTest.cpp initialize.cpp
+         initialize.cpp
+         CTileTest.cpp
+         CTileRoadTest.cpp
+         CCityTest.cpp
+         Generating Code...
+     1>d:\windows\programming\school\cse 335\work\steps\step4\city\city\city.h(250): warning C4715: 'CCity::ZoningIterSupport::end' : not all control paths return a value
+     1>d:\windows\programming\school\cse 335\work\steps\step4\city\city\city.h(175): warning C4715: 'CCity::ZoningIter::operator++' : not all control paths return a value
+     1>d:\windows\programming\school\cse 335\work\steps\step4\city\city\city.h(220): warning C4715: 'CCity::ZoningIterSupport::begin' : not all control paths return a value
+       Link:
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Debug\Testing.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\UnitTest\lib" StdAfx City Tile XmlNode TileLandscape TileBuilding TileCoalmine TileRoad TilePropertiesDlg TileVisitor RoadVisitor IsRoadVisitor /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Debug\Testing.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Debug\Testing.lib" /MACHINE:X86 /DLL Debug\CCityTest.obj
+         Debug\CTileRoadTest.obj
+         Debug\CTileTest.obj
+         Debug\stdafx.obj
+         Debug\initialize.obj
+            Creating library D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Debug\Testing.lib and object D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Debug\Testing.exp
+         Testing.vcxproj -> D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Debug\Testing.dll
+     1>Done Building Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step4\City\Testing\Testing.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.37

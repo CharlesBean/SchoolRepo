@@ -1,0 +1,148 @@
+\hypertarget{class_c_controller}{\section{C\+Controller Class Reference}
+\label{class_c_controller}\index{C\+Controller@{C\+Controller}}
+}
+
+
+An extended elevator controller class.  
+
+
+
+
+{\ttfamily \#include $<$Controller.\+h$>$}
+
+Inheritance diagram for C\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_controller_a4c332e7b3c3035cdde7b8f344b565429}{enum \hyperlink{class_c_controller_a4c332e7b3c3035cdde7b8f344b565429}{States} \{ \\*
+{\bfseries Idle}, 
+{\bfseries Door\+Opening}, 
+{\bfseries Door\+Open}, 
+{\bfseries Door\+Closing}, 
+\\*
+{\bfseries Moving}, 
+{\bfseries Stop}, 
+{\bfseries Fireman\+Mode\+Idle}, 
+{\bfseries Fireman\+Mode\+Opening}, 
+\\*
+{\bfseries Fireman\+Mode\+Closing}, 
+{\bfseries Fireman\+Mode\+Moving}, 
+{\bfseries Fireman\+Mode\+Stop}, 
+{\bfseries Fireman\+Mode\+Closed}
+ \}}\label{class_c_controller_a4c332e7b3c3035cdde7b8f344b565429}
+
+\begin{DoxyCompactList}\small\item\em The state machine states. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_controller_a840d9cb376c21b58566c7f9c069e402f}{\hyperlink{class_c_controller_a840d9cb376c21b58566c7f9c069e402f}{C\+Controller} ()}\label{class_c_controller_a840d9cb376c21b58566c7f9c069e402f}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_c_controller_a06c1bf4eeb697d4f7574ea1d7c51d267}{virtual \hyperlink{class_c_controller_a06c1bf4eeb697d4f7574ea1d7c51d267}{$\sim$\+C\+Controller} ()}\label{class_c_controller_a06c1bf4eeb697d4f7574ea1d7c51d267}
+
+\begin{DoxyCompactList}\small\item\em Virtual Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_controller_a6d6c0e9fc0c9d8dac6c16d6c077f0863}{Service} () override
+\begin{DoxyCompactList}\small\item\em Elevator service function. \end{DoxyCompactList}\item 
+\hypertarget{class_c_controller_a6be672a805c6643891a54711cce3e64d}{void \hyperlink{class_c_controller_a6be672a805c6643891a54711cce3e64d}{Initialize} ()}\label{class_c_controller_a6be672a805c6643891a54711cce3e64d}
+
+\begin{DoxyCompactList}\small\item\em Initializes the controller. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_controller_ac0f1d0ba9728974024a921cd2e372fc2}{On\+Open\+Pressed} () override
+\begin{DoxyCompactList}\small\item\em This function is called when the open button is pressed. \end{DoxyCompactList}\item 
+\hypertarget{class_c_controller_a4572ee70739d93ebf98db14ee85812b1}{virtual void \hyperlink{class_c_controller_a4572ee70739d93ebf98db14ee85812b1}{On\+Close\+Pressed} () override}\label{class_c_controller_a4572ee70739d93ebf98db14ee85812b1}
+
+\begin{DoxyCompactList}\small\item\em This function is called when the door close button is pressed. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_controller_a51a8022c7acbf95ffa907ff063899713}{On\+Panel\+Floor\+Pressed} (int floor) override
+\begin{DoxyCompactList}\small\item\em Function is called when the panel floor is pressed. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_controller_af00ba0b3ea16235cd1f0e6f1fe672526}{On\+Call\+Up\+Pressed} (int floor) override
+\begin{DoxyCompactList}\small\item\em Function called when the call-\/up elevator button is pressed. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_controller_ac542dad16cba63af452184e3878e8d8e}{On\+Call\+Down\+Pressed} (int floor) override
+\begin{DoxyCompactList}\small\item\em Function called when the call-\/down elevator button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An extended elevator controller class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_controller_ac542dad16cba63af452184e3878e8d8e}{\index{C\+Controller@{C\+Controller}!On\+Call\+Down\+Pressed@{On\+Call\+Down\+Pressed}}
+\index{On\+Call\+Down\+Pressed@{On\+Call\+Down\+Pressed}!C\+Controller@{C\+Controller}}
+\subsubsection[{On\+Call\+Down\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Controller\+::\+On\+Call\+Down\+Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{floor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_controller_ac542dad16cba63af452184e3878e8d8e}
+
+
+Function called when the call-\/down elevator button is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em floor} & -\/ The floor called on (int) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_controller_af00ba0b3ea16235cd1f0e6f1fe672526}{\index{C\+Controller@{C\+Controller}!On\+Call\+Up\+Pressed@{On\+Call\+Up\+Pressed}}
+\index{On\+Call\+Up\+Pressed@{On\+Call\+Up\+Pressed}!C\+Controller@{C\+Controller}}
+\subsubsection[{On\+Call\+Up\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Controller\+::\+On\+Call\+Up\+Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{floor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_controller_af00ba0b3ea16235cd1f0e6f1fe672526}
+
+
+Function called when the call-\/up elevator button is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em floor} & -\/ The int of the floor \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_controller_ac0f1d0ba9728974024a921cd2e372fc2}{\index{C\+Controller@{C\+Controller}!On\+Open\+Pressed@{On\+Open\+Pressed}}
+\index{On\+Open\+Pressed@{On\+Open\+Pressed}!C\+Controller@{C\+Controller}}
+\subsubsection[{On\+Open\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Controller\+::\+On\+Open\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_controller_ac0f1d0ba9728974024a921cd2e372fc2}
+
+
+This function is called when the open button is pressed. 
+
+Event Handlers \hypertarget{class_c_controller_a51a8022c7acbf95ffa907ff063899713}{\index{C\+Controller@{C\+Controller}!On\+Panel\+Floor\+Pressed@{On\+Panel\+Floor\+Pressed}}
+\index{On\+Panel\+Floor\+Pressed@{On\+Panel\+Floor\+Pressed}!C\+Controller@{C\+Controller}}
+\subsubsection[{On\+Panel\+Floor\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Controller\+::\+On\+Panel\+Floor\+Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{floor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_controller_a51a8022c7acbf95ffa907ff063899713}
+
+
+Function is called when the panel floor is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em floor} & -\/ The int of the floor it was pressed on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_controller_a6d6c0e9fc0c9d8dac6c16d6c077f0863}{\index{C\+Controller@{C\+Controller}!Service@{Service}}
+\index{Service@{Service}!C\+Controller@{C\+Controller}}
+\subsubsection[{Service}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Controller\+::\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_c_controller_a6d6c0e9fc0c9d8dac6c16d6c077f0863}
+
+
+Elevator service function. 
+
+General Functions\+This function is called once every 0.\+001 seconds and allows us to control elevator functionality.
+
+This function is called once every 0.\+001 seconds and allows us to control elevator functionality. Fireman Mode 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_controller_8h}{Controller.\+h}\item 
+\hyperlink{_controller_8cpp}{Controller.\+cpp}\end{DoxyCompactItemize}

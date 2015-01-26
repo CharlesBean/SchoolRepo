@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Delete Constructors</Title>
+          <Author>Charles B. Owen</Author>
+            <Description>Adds commented deletes for default constructors and assignment operator.</Description>
+          <Shortcut>delcon</Shortcut>
+      </Header>
+      <Snippet>
+
+            <Code Language="CPP">
+                <![CDATA[    /** \brief Default constructor disabled */
+    $Class$() = delete;
+    /** \brief Copy constructor disabled */
+    $Class$(const $Class$ &) = delete;
+    /** \brief Assignment operator disabled */
+    void operator=(const $Class$ &) = delete;]]>
+            
+            </Code>
+              <Declarations>
+    <Literal>
+        <ID>Class</ID>
+        <ToolTip>Replace with the class name.</ToolTip>
+        <Default>"ClassName"</Default>
+    </Literal>
+              </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,19 @@
+﻿Build started 12/5/2014 12:53:21 AM.
+     1>Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Elevator\Elevator.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\CL.exe /c /I"D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\/ElevatorLib" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Elevator.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Controller.cpp
+         Controller.cpp
+       Link:
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Debug\Elevator.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Debug\Elevator.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Debug\Elevator.lib" /MACHINE:X86 Debug\Elevator.res
+         Debug\Controller.obj
+         Debug\ElevatorApp.obj
+         Debug\Floor.obj
+         Debug\MainFrm.obj
+         Debug\stdafx.obj
+         "D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Debug\ElevatorLib.lib"
+         Elevator.vcxproj -> D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Debug\Elevator.exe
+     1>Done Building Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Elevator\Elevator.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.81

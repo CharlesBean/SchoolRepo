@@ -1,0 +1,22 @@
+﻿Build started 12/3/2014 5:00:28 PM.
+     1>Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\ElevatorLib\ElevatorLib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ElevatorLib.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ElevatorController.cpp ElevatorWnd.cpp
+         ElevatorController.cpp
+         Generating Code...
+         Compiling...
+         ElevatorWnd.cpp
+         Generating Code...
+       Lib:
+         D:\Windows\Programming\IDE's\Visual Studio 2013 Premium\Files\VC\bin\Lib.exe /OUT:"D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Debug\ElevatorLib.lib" /NOLOGO /MACHINE:X86 Debug\ElevatorLib.res
+         Debug\ElevatorWnd.obj
+         Debug\ElevatorController.obj
+         Debug\ElevatorLib.obj
+         Debug\stdafx.obj
+         Debug\TimeManagement.obj
+         ElevatorLib.vcxproj -> D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\Debug\ElevatorLib.lib
+     1>Done Building Project "D:\Windows\Programming\School\CSE 335\Work\Steps\Step7\Elevator\ElevatorLib\ElevatorLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.81

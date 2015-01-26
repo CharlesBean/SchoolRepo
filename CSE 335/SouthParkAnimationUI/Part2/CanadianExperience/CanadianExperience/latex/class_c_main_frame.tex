@@ -1,0 +1,180 @@
+\hypertarget{class_c_main_frame}{\section{C\+Main\+Frame Class Reference}
+\label{class_c_main_frame}\index{C\+Main\+Frame@{C\+Main\+Frame}}
+}
+
+
+Program main frame.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Frm.\+h$>$}
+
+Inheritance diagram for C\+Main\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_main_frame}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_main_frame_a89722c82d82f95a761772a8dd9755b7b}{enum \hyperlink{class_c_main_frame_a89722c82d82f95a761772a8dd9755b7b}{Motion\+Modes} \{ {\bfseries Move}, 
+{\bfseries Rotate}
+ \}}\label{class_c_main_frame_a89722c82d82f95a761772a8dd9755b7b}
+
+\begin{DoxyCompactList}\small\item\em Enumerations for the possible manipulation modes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_main_frame_af3e997aeae4148d2aaa4a1e1ae7bdd53}{\hyperlink{class_c_main_frame_af3e997aeae4148d2aaa4a1e1ae7bdd53}{C\+Main\+Frame} ()}\label{class_c_main_frame_af3e997aeae4148d2aaa4a1e1ae7bdd53}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_main_frame_a89722c82d82f95a761772a8dd9755b7b}{Motion\+Modes} \hyperlink{class_c_main_frame_a76c571ab75752dba8049e08f5e4ac920}{Get\+Mode} () const 
+\begin{DoxyCompactList}\small\item\em The selected manipulation mode. \end{DoxyCompactList}\item 
+\hypertarget{class_c_main_frame_a549bf677c955c2898c3c683321633c16}{virtual B\+O\+O\+L {\bfseries Pre\+Create\+Window} (C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+C\+T \&cs)}\label{class_c_main_frame_a549bf677c955c2898c3c683321633c16}
+
+\item 
+\hypertarget{class_c_main_frame_ade959eb0bab719bf06bb9b18ee407101}{virtual B\+O\+O\+L {\bfseries On\+Cmd\+Msg} (U\+I\+N\+T n\+I\+D, int n\+Code, void $\ast$p\+Extra, A\+F\+X\+\_\+\+C\+M\+D\+H\+A\+N\+D\+L\+E\+R\+I\+N\+F\+O $\ast$p\+Handler\+Info)}\label{class_c_main_frame_ade959eb0bab719bf06bb9b18ee407101}
+
+\item 
+\hypertarget{class_c_main_frame_a8ae555f23fdf97edb4feb4d3e1bfa4ee}{virtual \hyperlink{class_c_main_frame_a8ae555f23fdf97edb4feb4d3e1bfa4ee}{$\sim$\+C\+Main\+Frame} ()}\label{class_c_main_frame_a8ae555f23fdf97edb4feb4d3e1bfa4ee}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \hyperlink{class_c_main_frame_adf171bf1f2c6f10cc85dbe8db3fc93f7}{On\+Size} (U\+I\+N\+T n\+Type, int cx, int cy)
+\begin{DoxyCompactList}\small\item\em Handle a Size request from Windows. \end{DoxyCompactList}\item 
+afx\+\_\+msg B\+O\+O\+L \hyperlink{class_c_main_frame_a53a97f2229c5765329b2b59a21a54b0d}{On\+Erase\+Bkgnd} (C\+D\+C $\ast$p\+D\+C)
+\begin{DoxyCompactList}\small\item\em Called to erase the background. Disabled so we don't get flicker. \end{DoxyCompactList}\item 
+\hypertarget{class_c_main_frame_af07c2610f9f5631e7eb7374d10d5fdd3}{afx\+\_\+msg void \hyperlink{class_c_main_frame_af07c2610f9f5631e7eb7374d10d5fdd3}{On\+Edit\+Move} ()}\label{class_c_main_frame_af07c2610f9f5631e7eb7374d10d5fdd3}
+
+\begin{DoxyCompactList}\small\item\em Handle the Edit$>$Mode menu option. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \hyperlink{class_c_main_frame_aadc40c4ab290da2368f6b87443f5ffbc}{On\+Update\+Edit\+Move} (C\+Cmd\+U\+I $\ast$p\+Cmd\+U\+I)
+\begin{DoxyCompactList}\small\item\em Update the menu for Edit$>$Move. \end{DoxyCompactList}\item 
+\hypertarget{class_c_main_frame_a00f10667f35de1fa6693c1bea941d878}{afx\+\_\+msg void \hyperlink{class_c_main_frame_a00f10667f35de1fa6693c1bea941d878}{On\+Edit\+Rotate} ()}\label{class_c_main_frame_a00f10667f35de1fa6693c1bea941d878}
+
+\begin{DoxyCompactList}\small\item\em Handle the Edit$>$Rotate menu option. \end{DoxyCompactList}\item 
+afx\+\_\+msg void \hyperlink{class_c_main_frame_af098b8129775d1b5fb47fcaaabce8c01}{On\+Update\+Edit\+Rotate} (C\+Cmd\+U\+I $\ast$p\+Cmd\+U\+I)
+\begin{DoxyCompactList}\small\item\em Update the menu for Edit$>$Rotate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_main_frame_a48666466fd37412fcaeff75c3b12e0ed}{afx\+\_\+msg int {\bfseries On\+Create} (L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+C\+T lp\+Create\+Struct)}\label{class_c_main_frame_a48666466fd37412fcaeff75c3b12e0ed}
+
+\item 
+\hypertarget{class_c_main_frame_adc353a3d1fc497fbc009b6d9e6914a82}{afx\+\_\+msg void {\bfseries On\+Set\+Focus} (C\+Wnd $\ast$p\+Old\+Wnd)}\label{class_c_main_frame_adc353a3d1fc497fbc009b6d9e6914a82}
+
+\item 
+\hypertarget{class_c_main_frame_ac863d694fd3637d492ef97396defbd8e}{virtual B\+O\+O\+L {\bfseries On\+Create\+Client} (L\+P\+C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+C\+T lpcs, C\+Create\+Context $\ast$p\+Context)}\label{class_c_main_frame_ac863d694fd3637d492ef97396defbd8e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_main_frame_ac8558942627d1502b5095e736840a1f3}{C\+M\+F\+C\+Tool\+Bar {\bfseries m\+\_\+wnd\+Tool\+Bar}}\label{class_c_main_frame_ac8558942627d1502b5095e736840a1f3}
+
+\item 
+\hypertarget{class_c_main_frame_a5842bded00e9137fbbf77343b99863be}{C\+M\+F\+C\+Status\+Bar {\bfseries m\+\_\+wnd\+Status\+Bar}}\label{class_c_main_frame_a5842bded00e9137fbbf77343b99863be}
+
+\item 
+\hypertarget{class_c_main_frame_a1d68466db594c4bebf41f707bc0a0647}{C\+Splitter\+Wnd {\bfseries m\+Wnd\+Splitter}}\label{class_c_main_frame_a1d68466db594c4bebf41f707bc0a0647}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Program main frame. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_main_frame_a76c571ab75752dba8049e08f5e4ac920}{\index{C\+Main\+Frame@{C\+Main\+Frame}!Get\+Mode@{Get\+Mode}}
+\index{Get\+Mode@{Get\+Mode}!C\+Main\+Frame@{C\+Main\+Frame}}
+\subsubsection[{Get\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motion\+Modes} C\+Main\+Frame\+::\+Get\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_main_frame_a76c571ab75752dba8049e08f5e4ac920}
+
+
+The selected manipulation mode. 
+
+\begin{DoxyReturn}{Returns}
+Currently selected manipulation mode 
+\end{DoxyReturn}
+\hypertarget{class_c_main_frame_a53a97f2229c5765329b2b59a21a54b0d}{\index{C\+Main\+Frame@{C\+Main\+Frame}!On\+Erase\+Bkgnd@{On\+Erase\+Bkgnd}}
+\index{On\+Erase\+Bkgnd@{On\+Erase\+Bkgnd}!C\+Main\+Frame@{C\+Main\+Frame}}
+\subsubsection[{On\+Erase\+Bkgnd}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L C\+Main\+Frame\+::\+On\+Erase\+Bkgnd (
+\begin{DoxyParamCaption}
+\item[{C\+D\+C $\ast$}]{p\+D\+C}
+\end{DoxyParamCaption}
+)}}\label{class_c_main_frame_a53a97f2229c5765329b2b59a21a54b0d}
+
+
+Called to erase the background. Disabled so we don't get flicker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+D\+C} & A device context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+A\+L\+S\+E 
+\end{DoxyReturn}
+\hypertarget{class_c_main_frame_adf171bf1f2c6f10cc85dbe8db3fc93f7}{\index{C\+Main\+Frame@{C\+Main\+Frame}!On\+Size@{On\+Size}}
+\index{On\+Size@{On\+Size}!C\+Main\+Frame@{C\+Main\+Frame}}
+\subsubsection[{On\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Main\+Frame\+::\+On\+Size (
+\begin{DoxyParamCaption}
+\item[{U\+I\+N\+T}]{n\+Type, }
+\item[{int}]{cx, }
+\item[{int}]{cy}
+\end{DoxyParamCaption}
+)}}\label{class_c_main_frame_adf171bf1f2c6f10cc85dbe8db3fc93f7}
+
+
+Handle a Size request from Windows. 
+
+This function ensures the child windows are the correct size on the screen after the main window is resized 
+\begin{DoxyParams}{Parameters}
+{\em n\+Type} & Type of resizing message \\
+\hline
+{\em cx} & The new width \\
+\hline
+{\em cy} & The new height \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_main_frame_aadc40c4ab290da2368f6b87443f5ffbc}{\index{C\+Main\+Frame@{C\+Main\+Frame}!On\+Update\+Edit\+Move@{On\+Update\+Edit\+Move}}
+\index{On\+Update\+Edit\+Move@{On\+Update\+Edit\+Move}!C\+Main\+Frame@{C\+Main\+Frame}}
+\subsubsection[{On\+Update\+Edit\+Move}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Main\+Frame\+::\+On\+Update\+Edit\+Move (
+\begin{DoxyParamCaption}
+\item[{C\+Cmd\+U\+I $\ast$}]{p\+Cmd\+U\+I}
+\end{DoxyParamCaption}
+)}}\label{class_c_main_frame_aadc40c4ab290da2368f6b87443f5ffbc}
+
+
+Update the menu for Edit$>$Move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cmd\+U\+I} & The pointer to the control user interface \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_main_frame_af098b8129775d1b5fb47fcaaabce8c01}{\index{C\+Main\+Frame@{C\+Main\+Frame}!On\+Update\+Edit\+Rotate@{On\+Update\+Edit\+Rotate}}
+\index{On\+Update\+Edit\+Rotate@{On\+Update\+Edit\+Rotate}!C\+Main\+Frame@{C\+Main\+Frame}}
+\subsubsection[{On\+Update\+Edit\+Rotate}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Main\+Frame\+::\+On\+Update\+Edit\+Rotate (
+\begin{DoxyParamCaption}
+\item[{C\+Cmd\+U\+I $\ast$}]{p\+Cmd\+U\+I}
+\end{DoxyParamCaption}
+)}}\label{class_c_main_frame_af098b8129775d1b5fb47fcaaabce8c01}
+
+
+Update the menu for Edit$>$Rotate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Cmd\+U\+I} & The pointer to the control user interface \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_main_frm_8h}{Main\+Frm.\+h}\item 
+\hyperlink{_main_frm_8cpp}{Main\+Frm.\+cpp}\end{DoxyCompactItemize}
