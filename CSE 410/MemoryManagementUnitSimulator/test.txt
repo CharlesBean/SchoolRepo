@@ -1,0 +1,23 @@
+
+// Output created for
+// ./PROG05 15 5 1 d
+// Number of pages: 1024
+Page NULL is replaced by Page 117
+Page NULL was not dirty 
+Page 117 is replaced by Page 92
+Page 117 is not dirty
+Page 92 is replaced by Page 168
+Page 92 is dirty
+Page 168 is replaced by Page 65
+Page 168 is not dirty
+Page 65 is replaced by Page 174
+Page 65 is not dirty
+Page 174 is replaced by Page 89
+Page 174 is dirty
+Page 89 is replaced by Page 36
+Page 89 is dirty
+Page 36 is replaced by Page 109
+Page 36 is dirty
+Number of memory accesses = 8
+Number of page faults (replacement) = 7
+Number of pages written to disk = 4

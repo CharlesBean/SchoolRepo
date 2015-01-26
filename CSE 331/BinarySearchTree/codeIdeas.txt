@@ -1,0 +1,163 @@
+
+//    // If the tree is empty (no root)
+//    if (root == nullptr)
+//    {
+//        // Create the node
+//        Node *node = new Node(t);
+//
+//        // Set the root to the new node
+//        root = node;
+//    }
+//
+//    else if (root != nullptr)
+//    {
+//        // Creating iterator
+//        Node *temp = root;
+//
+//        // While we have an iterator
+//        while (temp != nullptr)
+//        {
+//            // If the passed data is less than the node's data
+//            if (t < temp->data())
+//            {
+//                // If the node's left child is nullptr
+//                if (temp->m_ll == nullptr)
+//                {
+//                    // Create new left child node and assign (add leaf)
+//                    temp->m_ll = new Node(t);
+//
+//                    // Break the loop (no other condition, because we don't return)
+//                    break;
+//                }
+//                else // If the node's left child exists
+//                {
+//                    // Move iterator to left child and redo while-loop
+//                    temp = temp->m_ll;
+//                }
+//            }
+//            // Else the data is greater than the node's data
+//            else if (t > temp->data())
+//            {
+//                // If the node's right child is nullptr
+//                if (temp->m_rl == nullptr)
+//                {
+//                    // Create new right child node and assign (add leaf)
+//                    temp->m_rl = new Node(t);
+//
+//                    // Break while loop (insert complete)
+//                    break;
+//                }
+//                else // If the node's right child exists
+//                {
+//                    // Move iterator to right child (data is greater than node's data)
+//                    temp = temp->m_rl;
+//                }
+//            }
+//        }
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    if (root != nullptr)
+//    {
+//        if (root->data() == t) // If root is delete point
+//        {
+//            Node *delNode = root;
+//        }
+//        else
+//        {
+//            if (t < node->data() && node->m_ll != nullptr)
+//            {
+//                if (node->m_ll->data() == t)
+//                {
+//                    // If the left child is node to delete
+//                }
+//                else
+//                {
+//                    DeleteHelper(node->m_ll, t);
+//                }
+//            }
+//            else if (t > node->data() && node->m_rl != nullptr)
+//            {
+//                if (node->m_rl->data() == t)
+//                {
+//                    // If the right child is node to delete
+//                }
+//                else
+//                {
+//                    DeleteHelper(node->m_rl, t);
+//                }
+//            }
+//            else
+//            {
+//                cout << "Number not found" << endl;
+//            }
+//        }
+//    }
+//    else
+//    {
+//        cout << "Tree is empty." << endl;
+//    }
+
+
+
+    Node* deletionPointer;
+
+    if (node == nullptr)
+    {
+        cout << "The node: " << t << " does not exist within the tree (empty)." << endl;
+    }
+    else if (t < node->data())
+    {
+        if (node->m_ll != nullptr)
+        {
+            DeleteHelper(node->m_ll, t);
+        }
+    }
+    else if (t > node->data())
+    {
+        if (node->m_rl != nullptr)
+        {
+            DeleteHelper(node->m_rl, t);
+        }
+    }
+    else if (node->data() == t)// Found the correct node
+    {
+        // If no left child and right child exists
+        if (node->m_ll == nullptr && node->m_rl != nullptr)
+        {
+            node = node->m_rl;
+        }
+        // If no right child and left child exists
+        else if (node->m_rl == nullptr && node->m_ll != nullptr)
+        {
+            // Replace with left child
+            node = node->m_ll;
+        }
+        else if (node->m_rl != nullptr && node->m_ll != nullptr) // Node has two children
+        {
+            // Left child's max becomes root
+        }
+        else // Node has no children
+        {
+            deletionPointer = node;
+
+            node->m_ll = nullptr;
+            node->m_rl = nullptr;
+            node = nullptr;
+
+            delete deletionPointer;
+
+            cout << "deleted " << t << endl;
+        }
+    }

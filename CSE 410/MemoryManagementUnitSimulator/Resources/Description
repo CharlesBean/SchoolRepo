@@ -1,0 +1,83 @@
+CSE 410
+Project 5
+Due date: November 4, 2014
+Points: 30
+
+The goal of this project is to simulate memory management algorithm. The details of the project are as follows:
+
+You will run the program as:
+    PROG05 <VirtualMemory> <PageSize> <PhysicalMemory>  d/n
+        First 2 parameters are specified as power of 2. Third parameter specifies number of frames in physical memory. The last parameter identifies whether some debugging information is printed.
+            Thus, `PROG05 20 10 17 d’ specifies that virtual memory is 220, page size is 210, physical memory has 17 frames, and debugging information should be printed.
+        The program will read input from standard input (cin >> ).
+        You should submit a makefile and any other relevant files (c++, .h..)
+
+Contents of input:
+    Each line in the input will be of the form
+        ADDR r    or
+        ADDR w
+    Thus, each line identifies the memory access and whether it was for read or for write.
+
+Your program should identify the effect of running such a program on the given system, identified by the parameters given to PROG05.
+
+Assume that there are one or more blank lines at the end of the input. No other blank lines exist in the input.
+
+If debugging information is on, you should print the following as appropriate
+    Page X replaced by Page Y  (If Page Y is brought in to a frame that was empty, you should print Page NULL replaced by Page Y)
+    Page X was dirty/not dirty
+
+Assume that the replacement policy is LRU.
+
+Upon completion, print the following information
+    Number of Memory Accesses
+    Number of Memory Accesses that resulted in Page Faults (Consider only those page faults where the some page was replaced by another. Ignore the cases where the page was brought into a frame that was initially empty)
+    Number of Pages that were written to the disk. (Include any dirty pages still in memory as they still need to be written to the disk.)
+
+You should assume that virtual memory is at most 220 and page size is at least 210.
+
+Your implementation should be reasonably efficient. For example, searching through all page table entries is not acceptable. Searching through all frame entries is ok.
+
+
+
+Hints:
+    Your code should include a page table
+        Page table is an array of page table entries
+            Each page table entry contains
+                Present bit
+                Modified bit (Dirty?)
+                Frame Number
+        You may want to add a `timestamp' to the page table as well.
+    For every access, you will
+        Find the page number
+        Check if the page is in memory
+            If yes -> update timestamp for LRU purposes
+            If no -> identify a page that should be replaced
+    You should also maintain a frame table (similar to inverted page table)
+        This will be useful when you decide to replace a frame.
+        When you replace a frame, you need to find out what page is inside it.
+        Then, you will update the page table entry to reflect that the page is no longer in memory
+
+
+NOTES:
+
+
+//    cout << virtualMemory << endl;
+//    cout << pageSize << endl;
+//    cout << physicalMemory << endl;
+//    cout << argv[4] << ": " << debugMode << endl;
+
+//            cout << '\t' << memory << "-" << endl;
+//            cout << std::bitset<32>(pageNumber) << endl;
+//            cout << pageNumber << endl;
+//            cout << "\twrite: " << write << endl;
+
+
+
+            // Create new page (index: size - 1) (if we are writing - then it is being modified)
+            PageTableEntry entry = PageTableEntry(isPresent, isModified, frameNumber); // Is present, IF modified, and the FN
+
+            // Begin the timestamp
+            entry.mTimestamp = 0;
+
+            // Append the new entry
+            mFrameTable.mEntries.push_back(entry);

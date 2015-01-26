@@ -1,0 +1,23 @@
+// Output created for
+// PROG05 20 10 3 d
+// Page size is 1K.
+Page NULL is replaced by Page 3
+Page NULL was not dirty                // This statement is optional for NULL page
+Page NULL is replaced by Page 2
+Page NULL was not dirty
+Page NULL is replaced by Page 5
+Page NULL was not dirty
+// Nothing will be printed for next 3 accesses since page is already in memory
+// Page 1 will cause a page fault. 3 is least recently used. So
+Page 3 is replaced by Page 1
+Page 3 is not dirty
+// Next we access page 3. This causes a page fault. The LRU page is 5
+Page 5 is replaced by Page 3
+Page 5 is dirty   // Note that page 5 has been written to before
+/// ############# File over #####
+Number of memory accesses = 8
+Number of page faults = 2
+Number of pages written to disk = 3
+// This includes page 5 that was written earlier. Also, pages 1 and 2 in memory are dirty.
+
+

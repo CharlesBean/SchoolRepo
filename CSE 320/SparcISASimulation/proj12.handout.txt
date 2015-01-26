@@ -1,0 +1,96 @@
+
+
+CSE 320 Spring 2014
+
+Computer Project #12 -- SPARC ISA Implementation
+
+Assignment Overview:
+
+  This assignment develops familiarity with the control transfer instructions
+  for the SPARC microprocessor.
+
+  It is worth 30 points (3% of course grade), and must be completed no later
+  than 11:59 PM on Thursday, April 24.
+
+Assignment Specifications:
+
+  1) The program will simulate some of the actions of the CPU during the
+  instruction fetch-execute cycle for the SPARC microprocessor.
+
+  You will develop a library module which calculates the value which should be
+  used to update the nPC register at the end of the execute stage in the
+  fetch/execute cycle.
+
+  The interface to the library module is through function "update", which is
+  declared as follows:
+
+    unsigned update( unsigned nPC, unsigned PC, unsigned IR, unsigned PSR );
+
+  The first argument is the current contents of the nPC register.
+
+  The second argument is the current contents of the PC register.
+
+  The third argument is the current contents of the IR register.
+
+  The fourth arguement is the current contents of the PSR register.
+
+  The contents of the IR will be the machine language representation of a
+  valid instruction which falls into one of the following categories:  CALL,
+  JMPL, Bicc, other.
+
+  Function "update" will compute and return the next value of the nPC.
+
+  2) You will develop a driver module to test your implementation of the
+  library module.  The driver module will consist of function "main" and any
+  additional helper functions which you choose to implement.
+
+  Your driver module will not be interactive.  If it accepts any input, you
+  will supply that input in a text file named "proj12.tests".
+
+  All output will be appropriately labeled.
+
+Assignment Deliverables:
+
+  The deliverables for this assignment are:
+
+    proj12.makefile  -- the makefile which produces "proj12"
+    proj12.support.c -- the source code for your library module
+    proj12.driver.c  -- the source code for your driver module
+    proj12.tests     -- the input to your driver module, if needed
+
+  Be sure to submit your files for grading via the "handin" program.
+
+
+
+Assignment Notes:
+
+  1) The source code for the library module and the driver module must be in
+  separate files.
+
+  2) Please note that your source code files must be translated by "gcc",
+  which is a C compiler and accepts C source statements (a subset of C++).
+
+  3) Please note that your driver module may not be written as an interactive
+  program, where the user supplies input in response to prompts.  Instead,
+  your test cases will either be included in the source code as literal
+  constants, or will be supplied as inputs to the driver module in a file
+  named "proj12.tests".
+
+  If your driver module requires no inputs, your solution will be executed
+  using:
+
+    proj12
+
+  If your driver module does require inputs, your solution will be executed
+  using:
+
+    proj12 < proj12.tests
+
+  4) Function "update" will assume that each of the general purpose registers
+  contains four copies of the register number in hexadecimal.  For example:
+
+     R[7]:   0x07070707
+     R[15]:  0x0F0F0F0F
+     R[23]:  0x17171717
+     R[31]:  0x1F1F1F1F
+
